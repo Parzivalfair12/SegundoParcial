@@ -1,0 +1,13 @@
+package com.example.demo123.repository;
+
+
+
+import com.example.demo123.model.Card;
+
+import java.util.List;
+public interface ICardRepository {
+    public List<Card> findAll();
+    public int save(Card card);
+    public int update(Card card);
+    public int deleteById(int id);
+}
